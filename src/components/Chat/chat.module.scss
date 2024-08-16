@@ -1,0 +1,118 @@
+.chats {
+    @apply z-[2] fixed bottom-[30px] right-[30px] w-[60px] md:w-[100px] select-none;
+    .puls {
+        @apply pointer-events-none z-[-1] absolute top-0 left-0 animate-ping h-[60px] w-[60px] md:h-[100px] md:w-[100px] inline-flex rounded-full bg-sky-400 opacity-75;
+    }
+    img {
+        @apply z-20  w-full h-full;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            .puls {
+                @apply animate-none;
+            }
+            button {
+                @apply bg-sky-400 rounded-full;
+            }
+        }
+    }
+    &_active {
+        .puls {
+            @apply animate-none;
+        }
+    }
+}
+
+.head {
+    @apply relative;
+    h4 {
+        @apply text-center text-[20px] py-[15px];
+    }
+    button {
+        @apply absolute top-0 opacity-75 right-[10px] p-3;
+        svg {
+            @apply rotate-45;
+        }
+    }
+}
+
+.modal {
+    @apply w-full md:w-[500px] max-md:h-full relative;
+    .content {
+        @apply items-center max-md:h-full md:rounded-[10px] relative;
+
+        .accept {
+            @apply flex flex-col px-[20px] py-[20px];
+            .input {
+                @apply w-full relative;
+                input {
+                    @apply w-full bg-[#EBF1FB] mb-[30px] py-[15px] text-[20px] pl-[20px] md:pl-[30px] rounded-[10px] font-normal text-[#404040];
+
+                    &::placeholder {
+                        @apply font-normal text-[#B1B1B1] text-[18px];
+                    }
+                }
+
+                P {
+                    @apply mb-4;
+                }
+                .error {
+                    @apply absolute top-[90px] left-0 text-red-500 text-[1px];
+                }
+            }
+            .btn {
+                @apply flex justify-end;
+                button {
+                    @apply bg-[#3669AE] rounded-[10px] text-white px-[20px] py-[15px] transition-all duration-200;
+                    @media (hover: hover) {
+                        &:hover {
+                            @apply bg-[#DDE3FF] text-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.chat {
+    // @apply   ;
+    @apply h-[calc(100vh-60px)];
+}
+
+.list {
+    @apply h-[calc(100%-60px)] md:max-h-[380px]  overflow-auto scroll-smooth px-2;
+}
+
+.bottom {
+    @apply flex z-10 max-md:fixed max-md:bottom-[-1px] max-md:left-0 w-full bg-white;
+    .input {
+        @apply w-full;
+        input {
+            @apply w-full px-[15px] py-[15px] outline-none;
+        }
+    }
+    .send {
+        @apply w-full;
+        textarea {
+            @apply rounded-none w-full px-[15px] py-[15px] resize-none outline-none max-md:mb-[-3px];
+        }
+    }
+    .btns {
+        @apply flex bg-white items-start pt-[15px];
+        button {
+            // @apply absolute top-0 right-0;
+            svg {
+                @apply stroke-[#3669AE] mx-[15px] transition-all duration-300;
+            }
+            svg {
+                @media (hover: hover) {
+                    &:hover {
+                        @apply fill-[#3669AE] stroke-white;
+                    }
+                }
+            }
+        }
+    }
+}

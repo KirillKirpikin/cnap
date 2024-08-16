@@ -1,0 +1,29 @@
+.admin {
+    @apply mx-4 mb-[40px];
+}
+
+.container {
+    @apply mx-auto max-w-[1440px] mt-[30px]  md:mt-[75px];
+    h2 {
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[20px] md:mb-[40px] max-md:mt-[20px];
+    }
+}
+.out {
+    @apply flex justify-end mr-[20px];
+    button {
+        @apply px-[40px] text-white bg-red-600 py-[20px] rounded-[10px] transition-all duration-300;
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-rose-700;
+            }
+        }
+    }
+}
+
+.body {
+    @apply flex max-md:flex-col md:items-start;
+}
+
+.page {
+    @apply border-[6px] border-[#DDE3FF] w-full  rounded-[20px] overflow-auto h-[818px];
+}

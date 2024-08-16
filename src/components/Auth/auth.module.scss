@@ -1,0 +1,64 @@
+.auth {
+    @apply mx-2 my-[50px];
+}
+
+.container {
+    @apply mx-auto max-w-[980px] bg-[#DDE3FF] rounded-2xl py-[35px] md:py-[50px];
+}
+.form {
+    @apply flex flex-col max-w-[1137px] mx-auto px-2;
+    h2 {
+        @apply text-center font-bold text-[27px] text-[#404040] md:text-[35px] xl:text-[47px] mb-[30px] md:mb-[60px];
+    }
+    .input {
+        @apply flex flex-col items-center relative mx-[10px] sm:mx-[100px] lg:mx-[150px];
+        input {
+            @apply mb-[20px] md:mb-[30px] text-[20px] md:text-[33px] pl-[20px] md:pl-[40px] rounded-[10px] font-normal text-[#404040] py-2 w-full outline-none;
+            &::placeholder {
+                @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[33px];
+            }
+        }
+        .error {
+            @apply absolute top-[40px] left-2 sm:left-[15px] md:top-[55px] md:left-[35px] text-red-600 text-[11px] md:text-[16px];
+        }
+    }
+    .password {
+        @apply absolute right-[25px] top-[-1px] md:top-[5px];
+        svg {
+            g {
+                @apply transition-all duration-200;
+            }
+        }
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    g {
+                        @apply stroke-[#DDE3FF];
+                    }
+                }
+            }
+        }
+    }
+    .btns {
+        @apply flex flex-col items-center;
+        .btn {
+            @apply flex justify-end max-[400px]:w-[97%] w-[90%] md:w-[70%];
+            button {
+                @apply rounded-[10px] bg-white text-[20px] md:text-[30px] font-normal px-6 py-3 transition-all duration-200;
+                @media (hover: hover) {
+                    &:hover {
+                        @apply text-[#FFF] bg-[#1E4572];
+                    }
+                }
+            }
+        }
+        a {
+            @apply underline mt-[20px] transition-all duration-200;
+            @media (hover: hover) {
+                &:hover {
+                    @apply text-[#1E4572] underline-offset-4;
+                }
+            }
+        }
+    }
+}

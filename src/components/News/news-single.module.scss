@@ -1,0 +1,37 @@
+.news{
+    @apply mx-4 pb-10;
+    h2{
+        @apply text-center font-bold text-[24px] md:text-[28px] mb-[40px] max-w-[700px];
+    }
+}
+
+
+.container{
+    @apply mx-auto max-w-[1440px] mt-[30px]  md:mt-[30px];
+    
+}
+
+.body{
+    @apply flex flex-col items-center; 
+    .img{
+        @apply w-full flex justify-center mb-6 md:mb-9;
+        div{
+            @apply w-full flex justify-center;
+            img{
+                @apply w-[90%] md:w-[70%] xl:w-[50%] rounded-[30px];
+            }
+
+        }
+    }
+    pre{
+        // font-family: 'DniproCity';
+        @apply font-['DniproCity'] w-[100%] font-normal text-[20px] md:text-[24px] whitespace-pre-wrap;
+    }
+    p{
+        @apply font-normal text-[20px] md:text-[24px];
+    }
+}
+
+.bottom{
+    @apply flex justify-between mt-5;
+}

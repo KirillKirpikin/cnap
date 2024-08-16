@@ -1,0 +1,105 @@
+.container {
+    h3 {
+        @apply text-center text-[25px] font-bold mb-8;
+    }
+
+    .form {
+        @apply flex flex-col max-w-[1137px] mx-auto px-[15px] md:px-[70px] mb-[50px];
+        .input {
+            @apply w-full relative;
+            input {
+                @apply w-full bg-[#EBF1FB] mb-[30px] py-[15px] text-[20px] pl-[20px] md:pl-[30px] rounded-[10px] font-normal text-[#404040];
+
+                &::placeholder {
+                    @apply font-normal text-[#B1B1B1] text-[20px] md:text-[33px];
+                }
+            }
+            textarea {
+                @apply w-full mb-[30px] bg-[#EBF1FB] text-[20px] py-[15px]  pl-[20px] md:pl-[40px] rounded-[10px] font-normal text-[#404040] resize-none h-[140px] md:h-[277px];
+                &::placeholder {
+                    @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[33px];
+                }
+            }
+
+            P {
+                @apply mb-4;
+            }
+            .item {
+                @apply text-[22px];
+            }
+
+            .error {
+                @apply absolute top-[92px] left-0 text-red-600 text-[16px];
+            }
+
+            .error_textarea {
+                @apply absolute top-[320px] left-0 text-red-600 text-[16px];
+            }
+        }
+
+        .textarea {
+            .error {
+                @apply absolute top-[320px] left-0 text-red-600 text-[16px];
+            }
+        }
+    }
+}
+
+.btns {
+    @apply flex flex-col md:flex-row justify-between mt-[30px] md:items-center;
+}
+.btn {
+    @apply rounded-[10px] bg-[#EBF1FB] text-[20px] font-normal px-3 py-3 transition-all duration-200;
+
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#DDE3FF];
+        }
+    }
+}
+
+.old {
+    @apply mt-[15px] md:mt-[60px] w-full flex items-center;
+    p {
+        @apply mr-3;
+    }
+    img {
+        @apply w-[50px];
+    }
+}
+
+.old_news {
+    @apply mt-[15px] md:mt-[60px] w-full;
+    p {
+        @apply mb-3;
+    }
+    img {
+        @apply w-[300px];
+    }
+}
+
+.cnap {
+    @apply flex justify-between items-center mb-[30px];
+    .input_cnap {
+        @apply w-[25%];
+        input {
+            @apply w-full bg-[#EBF1FB]  py-[15px] text-[20px] pl-[20px] md:pl-[30px] rounded-[10px] font-normal text-[#404040];
+
+            &::placeholder {
+                @apply font-normal text-[#B1B1B1] text-[20px];
+            }
+        }
+    }
+    .btn_del {
+        @apply px-[15px] py-[10px] bg-red-800 rounded-md text-white transition-all duration-300;
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-red-500;
+            }
+        }
+    }
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}

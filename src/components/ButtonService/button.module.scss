@@ -1,0 +1,22 @@
+.link {
+    @apply flex items-center border-2 border-[#3836AE] rounded-[10px] px-[20px] py-[28px] transition-all duration-300;
+    .img {
+        @apply w-[45px] min-w-[45px] mr-3;
+        img {
+            @apply w-full;
+        }
+    }
+    .txt {
+        @apply text-[#404040] font-medium  md:text-[25px] xl:text-[27px];
+        word-break: break-word;
+    }
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#DDE3FF] border-[#DDE3FF];
+        }
+    }
+
+    &_active {
+        @apply bg-[#DDE3FF] border-[#DDE3FF];
+    }
+}

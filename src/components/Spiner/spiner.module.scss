@@ -1,0 +1,23 @@
+.spiner {
+    @apply flex items-center justify-center animate-pulse;
+}
+
+.circle {
+    @apply flex items-center;
+    .obj {
+        @apply animate-spin;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #1c1e1f;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+        margin: 0 auto;
+    }
+}
+
+.proloader {
+    @apply max-md:h-screen max-md:w-screen h-full w-full bg-black/10 fixed top-0 left-0 pointer-events-none flex justify-center items-center transition-all duration-500;
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}

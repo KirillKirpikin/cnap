@@ -1,0 +1,29 @@
+.main {
+    @apply flex justify-end;
+    svg {
+        @apply fill-black transition-all duration-300;
+    }
+    .update {
+        @apply mr-6;
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-green-500;
+                }
+            }
+        }
+    }
+    .delete {
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-red-600;
+                }
+            }
+        }
+    }
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}

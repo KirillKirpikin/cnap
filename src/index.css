@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'DniproCity';
+  src: url('./fonts/DNIPROCITY-REGULAR.OTF') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DniproCity';
+  src: url('./fonts/DNIPROCITY-MEDIUM.OTF') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DniproCity';
+  src: url('./fonts/DNIPROCITY-BOLD.OTF') format('opentype');
+  font-weight: 700;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #FDFEFF;
+  font-family: 'DniproCity';
+  line-height: normal;  
+  font-weight: 500;
+  font-size: 18px;
+  color: #000; 
+  
+}
+
+
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #3669ae;
+  border-radius: 2px;
+}
+
+
+
+
+

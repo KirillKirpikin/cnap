@@ -1,0 +1,32 @@
+.accardion{
+    @apply m-4 p-4 rounded-md bg-white border-[#3669AE] border-2;
+}
+.item {
+    @apply rounded-md border-2 border-[#3669AE] mb-[40px] max-w-[1200px] 2xl:max-w-full mx-auto;
+}
+
+.header {
+    @apply flex relative w-full  px-[25px] sm:px-[40px] py-[20px] cursor-pointer text-left font-medium justify-between items-center select-none; 
+    p{
+        @apply text-[20px] md:text-[26px];
+    }
+    .arrow{
+        @apply transition-all duration-300 ml-[10px];
+        &_active{
+            @apply rotate-180;
+        }
+    }
+
+}
+
+.collapse {
+    @apply h-0 overflow-hidden transition-all duration-300;
+
+    &_open{
+        @apply h-auto;
+    }
+}
+
+.body{ 
+    @apply rounded-b-md px-[25px] sm:px-[40px] pb-[20px] text-[18px]  md:text-[20px] font-normal;
+}

@@ -1,0 +1,22 @@
+.info{
+    @apply mt-[30px];
+    h2{
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[40px];
+    }
+}
+
+.container{
+    @apply mx-auto max-w-[1440px] mt-[30px]  md:mt-[75px];
+}
+
+.content{
+    @apply mx-auto max-w-[1200px] 2xl:max-w-full border-2 border-[#3836AE] rounded-[20px] px-[25px] sm:px-[80px] py-[20px];
+}
+.block{
+    h4{
+        @apply font-medium text-[#3669AE] text-[20px] md:text-[26px] mb-[20px];
+    }
+    p{
+        @apply font-normal text-[#404040] text-[18px]  md:text-[20px] mb-[20px]
+    }
+}

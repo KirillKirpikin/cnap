@@ -1,0 +1,15 @@
+.online{
+    @apply mx-4;
+}
+.container{
+    @apply mx-auto max-w-[1440px] mt-[30px]  md:mt-[75px];
+    h2{
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[40px] 
+    }
+    h3{
+        @apply text-center font-bold text-[18px] text-[#404040] md:text-[22px];
+    } 
+}
+.btns{
+    @apply grid items-stretch min-[430px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[15px] xl:gap-[30px];
+}

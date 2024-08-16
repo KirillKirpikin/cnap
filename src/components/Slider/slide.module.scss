@@ -1,0 +1,52 @@
+.slide {
+    @apply rounded-[30px] bg-[#EBF1FB] block transition duration-300 z-10  overflow-hidden;
+    .img {
+        @apply relative h-[70%] w-full rounded-t-[30px] overflow-hidden;
+    }
+    @media (hover: hover) {
+        &:hover {
+            @apply brightness-75;
+        }
+    }
+}
+.body {
+    @apply h-[140px] flex flex-col justify-between;
+    h4 {
+        @apply font-medium text-[#404040] text-[18px] md:text-[20px];
+    }
+    p {
+        @apply font-normal text-[16px] text-[#7D7D7D];
+    }
+    @apply p-[14px] sm:p-[20px];
+}
+
+.btns {
+    @apply flex items-center justify-around mt-[20px] md:mt-[40px];
+    a {
+        @apply text-[18px] underline underline-offset-4 text-[#3668aea4] transition-all duration-300;
+        @media (hover: hover) {
+            &:hover {
+                @apply underline-offset-8 text-[#3669AE];
+            }
+        }
+    }
+    .btn {
+        @apply cursor-pointer py-[20px] select-none;
+        svg {
+            @apply fill-[#404040];
+        }
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-[#3669AE];
+                }
+            }
+        }
+        &_left {
+            @apply rotate-180 pr-3;
+        }
+        &_right {
+            @apply pr-3;
+        }
+    }
+}

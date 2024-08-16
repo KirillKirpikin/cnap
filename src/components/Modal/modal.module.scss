@@ -1,0 +1,27 @@
+.modal{
+    @apply max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 opacity-0 pointer-events-none transition-all duration-500; 
+
+    &__active {
+        @apply opacity-100 pointer-events-auto visible z-20;
+
+    }   
+}
+
+
+.container{
+    @apply flex max-md:h-screen;
+    
+    
+}
+.content {
+    @apply  flex flex-col p-[20px] md:rounded-[12px] bg-[#F9F9F9] max-h-screen overflow-y-auto flex-initial;
+    
+              
+}
+
+.content_chat {
+    @apply absolute max-md:top-0 max-md:left-0  md:bottom-[120px] md:right-0 max-md:h-full max-md:w-screen flex flex-col md:rounded-[12px] bg-[#DDE3FF] md:max-h-[495px] flex-initial md:mr-[1%] overflow-hidden;
+        
+             
+}
+

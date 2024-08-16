@@ -1,0 +1,13 @@
+.input{
+    @apply max-w-[600px] w-[95%] md:w-[600px] relative mb-[40px] mx-auto;
+    input{
+        @apply border-2 border-[#3836AE] rounded-[40px] w-full bg-[#FFF] py-[23px] px-[40px] text-[20px] font-normal text-[#404040] outline-none;
+
+        &::placeholder{
+            @apply font-normal text-[#B1B1B1] text-[20px];
+        }        
+    }
+    img{
+        @apply absolute top-[35%] right-[41px];
+    }
+}

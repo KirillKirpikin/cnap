@@ -1,0 +1,110 @@
+.entry {
+    @apply pt-[30px] md:pt-[75px];
+    h2 {
+        @apply mb-[0px];
+    }
+    h4 {
+        @apply text-[#7D7D7D] text-center mb-[20px];
+    }
+}
+
+.container {
+    @apply max-w-[1440px] bg-[#EBF1FB] rounded-[20px] py-[30px] md:py-[60px];
+    h2 {
+        @apply mb-[40px];
+    }
+}
+
+.time {
+    @apply flex justify-between mb-[30px];
+}
+
+form {
+    @apply max-w-[1137px] mx-auto px-[15px] md:px-[70px];
+    .name {
+        @apply max-sm:flex-col flex justify-between;
+        .input {
+            @apply sm:w-[30%];
+        }
+    }
+
+    .email {
+        @apply flex justify-between max-sm:flex-col;
+        .input {
+            @apply sm:w-[47%];
+        }
+    }
+
+    .input {
+        @apply w-full relative;
+        input {
+            @apply w-full bg-[#FFF] mb-[30px] py-[15px] text-[20px] pl-[20px] md:pl-[30px] rounded-[10px] font-normal text-[#404040] outline-none appearance-none;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0),
+                inset 0 0 0 100px rgba(255, 255, 255, 1);
+
+            &::placeholder {
+                @apply font-normal text-[#B1B1B1] text-[20px];
+            }
+        }
+
+        P {
+            @apply mb-4;
+        }
+
+        .error {
+            @apply absolute top-[54px] left-[20px] sm:left-[30px] text-red-600 text-[16px];
+        }
+    }
+    .info {
+        @apply bg-[#D2E3FE] text-[18px] md:text-[24px] py-[15px] px-[20px] rounded-[10px];
+    }
+    .btn {
+        @apply flex justify-center mt-[40px] md:mt-[80px];
+        button {
+            @apply bg-[#3669AE] border-2 border-[#3669AE] max-sm:w-full text-white text-[20px] py-[20px] sm:px-[80px] rounded-lg transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-[#DDE3FF] text-black border-2 border-[#3669AE];
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    @apply h-screen md:h-auto w-full md:w-[600px] py-[20px];
+    h4 {
+        @apply text-center text-[24px] font-bold mb-[40px];
+    }
+    .content {
+        @apply md:px-[20px];
+        p {
+            @apply text-[20px] font-normal mb-[20px] text-[#404040];
+            span {
+                @apply font-bold;
+            }
+        }
+    }
+    .btns {
+        @apply flex max-md:flex-col max-md:justify-between mt-[30px] md:mx-[-5px];
+        button {
+            @apply md:mx-[5px] bg-[#fff] px-[30px] py-[20px] rounded-xl w-full md:w-[49%] text-[18px] font-light max-md:mb-[20px];
+        }
+        .cancel {
+            @apply transition-all duration-300 border border-[#3669AE];
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-red-700 text-white;
+                }
+            }
+        }
+        .del {
+            @apply bg-[#3669AE] text-white transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-green-600;
+                }
+            }
+        }
+    }
+}

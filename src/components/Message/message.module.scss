@@ -1,0 +1,54 @@
+.messageOther{
+    @apply flex justify-start items-start mb-[20px];
+
+    .img{ 
+        @apply max-w-full;
+    }
+
+    .icon{
+        @apply inline-block w-[50px] leading-[50px] h-[50px] text-center bg-[white] rounded-full  mr-[15px]; 
+    }
+    .body{
+        @apply flex flex-col items-start max-w-[60%];
+        p{
+            @apply font-normal mb-1;
+        }
+        .message{
+            @apply bg-[#3669AE] text-[18px] text-white font-normal p-[10px] rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px] w-full;
+            p{
+                @apply mt-[10px] text-[15px];
+            }
+            .text{
+                @apply break-words;
+            }
+        }
+    }
+}
+
+.messageMy{
+    @apply flex justify-end items-start mb-[20px];
+
+    .img{ 
+        @apply max-w-full;
+    }
+    
+    .icon{
+        @apply inline-block w-[50px] leading-[50px] h-[50px] text-center bg-[white] rounded-full  ml-[15px];
+    }
+    .body{
+        @apply flex flex-col items-end max-w-[60%];
+        p{
+            @apply mb-1;
+        }
+        .message{
+            @apply bg-[#FFF] font-normal p-[10px] rounded-tl-[10px] rounded-br-[10px] rounded-bl-[10px] w-full;
+            p{
+               @apply text-end mt-[10px] text-[15px]; 
+            }
+            .text{
+                @apply break-words;
+            }
+
+        }
+    }
+}

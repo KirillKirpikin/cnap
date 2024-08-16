@@ -1,0 +1,33 @@
+.file {
+    @apply relative w-[31px] h-[35px];
+}
+
+.label {
+    @apply text-[20px] md:text-[30px] font-normal  cursor-pointer flex items-center justify-center transition-all duration-200;
+    svg {
+        @apply stroke-[#3669AE] transition-all duration-300;
+    }
+    svg {
+        @media (hover: hover) {
+            &:hover {
+                @apply fill-[#3669AE] stroke-white;
+            }
+        }
+    }
+}
+.list {
+    @apply bg-[#EBF1FB]  absolute top-[-66px] left-[-125px] rounded-[10px] w-[520%];
+    li {
+        @apply flex w-[100%] justify-between px-[10px] py-[10px];
+        button {
+            @apply text-red-500;
+        }
+    }
+}
+.input {
+    @apply m-0 p-0 w-0 h-0 invisible;
+}
+
+.max {
+    @apply text-red-700 text-[20px] absolute top-[57px] left-[78px] w-[400%];
+}

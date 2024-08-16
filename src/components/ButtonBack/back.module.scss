@@ -1,0 +1,14 @@
+.btn {
+    @apply px-[20px] py-[10px] md:px-[40px] md:py-[15px] bg-[#EBF1FB] text-[28px] rounded-lg mb-5 transition-all duration-300;
+    svg {
+        @apply fill-[#404040] rotate-180 transition-all duration-300;
+    }
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#3669AE];
+            svg {
+                @apply fill-white;
+            }
+        }
+    }
+}

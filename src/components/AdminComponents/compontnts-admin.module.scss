@@ -1,0 +1,118 @@
+.compontnts {
+    @apply mx-4 py-[15px];
+    h2 {
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[40px];
+    }
+}
+
+.btns {
+    @apply grid items-stretch min-[390px]:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-[15px] xl:gap-[30px];
+}
+
+.link {
+    @apply flex items-center border-2 border-[#3836AE] rounded-[10px] px-[10px] sm:pl-[20px] sm:pr-[10px] py-[30px] md:py-[40px] transition-all duration-300 relative;
+    .img {
+        @apply flex basis-1/4 justify-center;
+    }
+    p {
+        @apply grow shrink-0 basis-3/4 ml-4 text-[#404040] font-medium  md:text-[25px] xl:text-[30px];
+        word-break: break-word;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-black/50;
+        }
+    }
+
+    &_active {
+        @apply bg-[#DDE3FF] border-[#DDE3FF];
+    }
+}
+
+.add {
+    @apply border-2 border-[#FFF] bg-[#F3F3F3];
+    p {
+        @apply ml-0;
+    }
+}
+
+.overlay {
+    @apply flex flex-col rounded-[10px] bg-black/50 w-full h-full absolute  left-0 top-[0] justify-center items-center transition-all duration-300;
+    svg {
+        @apply fill-white transition-all duration-300;
+    }
+    .top {
+        @apply flex;
+    }
+    .update {
+        @apply mr-6;
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-green-500;
+                }
+            }
+        }
+    }
+    .delete {
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-red-600;
+                }
+            }
+        }
+    }
+
+    .list {
+        @apply bg-white px-4 py-2 rounded-lg mt-2 transition-all duration-300;
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-[#DDE3FF];
+            }
+        }
+    }
+}
+
+.modal {
+    @apply w-[500px];
+    h4 {
+        @apply text-center text-[20px] font-bold mb-[20px];
+    }
+    .content {
+        @apply mx-auto w-[320px] flex items-center border-2 border-[#3836AE] rounded-[10px] px-[10px] py-[30px];
+        img {
+            @apply flex basis-1/4 justify-center;
+        }
+        p {
+            @apply grow shrink-0 basis-3/4 ml-4 text-[#404040] font-medium  md:text-[25px] xl:text-[30px];
+        }
+    }
+    .btns {
+        @apply flex justify-between mt-[30px];
+        button {
+            @apply bg-[#EBF1FB] px-[30px] py-[20px] rounded-xl;
+        }
+        .cancel {
+            @apply transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-red-700 text-white;
+                }
+            }
+        }
+        .del {
+            @apply bg-[#3669AE] text-white transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-green-600;
+                }
+            }
+        }
+    }
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}

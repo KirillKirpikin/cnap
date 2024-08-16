@@ -1,0 +1,83 @@
+.contacts {
+    @apply mx-4 py-[15px];
+    h2 {
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[40px];
+    }
+}
+
+.one {
+    @apply bg-[#DDE3FF] rounded-[10px] px-[20px] py-[20px] mb-[20px];
+}
+
+.add {
+    @apply flex items-center justify-center bg-[#DDE3FF] rounded-[10px] py-[70px] transition-all duration-300;
+    p {
+        @apply ml-[20px] text-[30px] font-bold;
+    }
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#3669AE];
+            svg {
+                @apply fill-white;
+            }
+            p {
+                @apply text-white;
+            }
+        }
+    }
+}
+
+.contact {
+    @apply bg-[#EBF1FB] rounded-[30px] p-[20px] md:p-[50px];
+    h3 {
+        @apply font-bold text-[22px] md:text-[26px] mb-7 sm:mb-10;
+    }
+}
+
+.block {
+    @apply flex items-center sm:mb-11;
+    &:not(:last-child) {
+        @apply mb-[30px];
+    }
+    .img {
+        @apply w-[43px] mr-5 lg:mr-10 flex justify-center;
+    }
+    p {
+        @apply font-medium text-[20px] md:text-[26px];
+    }
+}
+
+.modal {
+    @apply w-[500px];
+    h4 {
+        @apply text-center text-[20px] font-bold mb-[20px];
+    }
+    .content {
+        @apply mx-auto w-[320px] flex items-center border-2 border-[#3836AE] rounded-[10px] px-[10px] py-[30px];
+        p {
+            @apply grow shrink-0 basis-3/4 ml-4 text-[#404040] font-medium  md:text-[25px] xl:text-[30px];
+        }
+    }
+    .btns {
+        @apply flex justify-between mt-[30px];
+        button {
+            @apply bg-[#EBF1FB] px-[30px] py-[20px] rounded-xl;
+        }
+        .cancel {
+            @apply transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-red-700 text-white;
+                }
+            }
+        }
+        .del {
+            @apply bg-[#3669AE] text-white transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-green-600;
+                }
+            }
+        }
+    }
+}

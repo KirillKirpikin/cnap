@@ -1,0 +1,54 @@
+.container {
+    h3 {
+        @apply text-center text-[25px] font-bold mb-8;
+    }
+
+    .form {
+        @apply flex flex-col items-start max-w-[700px] mx-auto bg-[#EBF1FB] rounded-[20px];
+        .input {
+            @apply w-full flex px-[40px] items-start py-[20px] relative;
+
+            input {
+                @apply pl-2 border-b-2 border-[#404040] w-full bg-[#EBF1FB]  pt-[20px] text-[20px] font-normal text-[#404040] outline-none;
+
+                &::placeholder {
+                    @apply font-normal text-[#B1B1B1] text-[20px] pl-2;
+                }
+            }
+
+            .img {
+                @apply w-[43px] mr-[10px] flex justify-center items-center;
+            }
+            .error {
+                @apply absolute top-[65px] left-[90px] text-red-600 text-[16px];
+            }
+        }
+    }
+}
+
+.btns {
+    @apply flex justify-end mt-[30px]  pb-[10px] pr-[40px] w-full;
+
+    .btn {
+        @apply rounded-[10px] bg-[#DDE3FF] text-[20px] md:text-[30px] font-normal px-3 py-3 transition-all duration-200;
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-[#3669AE] text-[#FFF];
+            }
+        }
+    }
+}
+
+.old {
+    @apply mt-[15px] md:mt-[60px] w-full flex items-center;
+    p {
+        @apply mr-3;
+    }
+    img {
+        @apply w-[50px];
+    }
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}

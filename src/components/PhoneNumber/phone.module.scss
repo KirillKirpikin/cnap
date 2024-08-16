@@ -1,0 +1,14 @@
+.phone {
+    @apply mb-[5px] inline-block;
+    a {
+        @apply transition-all duration-200;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            a {
+                @apply text-[#3669AE];
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.add {
+    @apply flex items-center bg-[#F3F3F3] rounded-[10px] px-[40px] py-[20px] transition-all duration-300;
+    p {
+        @apply text-[20px] font-bold ml-[20px];
+    }
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#DDE3FF];
+        }
+    }
+}
+
+.modal {
+    @apply w-[500px];
+    h4 {
+        @apply text-center text-[20px] font-bold mb-[20px];
+    }
+    .content {
+        @apply mx-auto w-[320px] flex items-center border-2 border-[#3836AE] rounded-[10px] px-[10px] py-[30px];
+        p {
+            @apply grow shrink-0 basis-3/4 ml-4 text-[#404040] font-medium  md:text-[25px] xl:text-[30px];
+        }
+    }
+    .btns {
+        @apply flex justify-between mt-[30px];
+        button {
+            @apply bg-[#EBF1FB] px-[30px] py-[20px] rounded-xl;
+        }
+        .cancel {
+            @apply transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-red-700 text-white;
+                }
+            }
+        }
+        .del {
+            @apply bg-[#3669AE] text-white transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-green-600;
+                }
+            }
+        }
+    }
+}

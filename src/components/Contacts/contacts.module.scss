@@ -1,0 +1,20 @@
+.contacts{
+    @apply mx-4 pt-[30px]  md:pt-[75px];
+    h2{
+        @apply text-center font-bold text-[24px] md:text-[28px] mb-[40px];
+    }
+   
+
+}
+.container{
+    @apply mx-auto max-w-[1440px];
+}
+
+.list {
+    @apply grid gap-[20x] items-stretch md:grid-cols-2;
+    
+    > *:not(:last-child) {
+        @apply  max-sm:mb-10;
+    }
+ 
+}

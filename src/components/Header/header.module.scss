@@ -1,0 +1,11 @@
+.header{
+    @apply mx-2;
+}
+
+.container{
+    background: url('./../../assets/headbg.png') 50% 0/cover no-repeat;
+    @apply mx-auto max-w-[1440px] flex items-center justify-center  rounded-b-3xl h-[100px] md:h-[144px];
+    h1 {
+        @apply text-center font-bold text-[20px] mx-[10px] md:text-[30px] xl:text-[50px] text-[#152235] rounded-[12px] sm:rounded-[23px] bg-white/75 backdrop-blur-sm px-[15px] md:px-[40px] py-[10px];  
+    }
+}

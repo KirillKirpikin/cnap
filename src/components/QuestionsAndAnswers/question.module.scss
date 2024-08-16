@@ -1,0 +1,10 @@
+.question{
+    @apply mx-4 pt-[30px]  md:pt-[75px];
+    h2{
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[40px] ;
+    }
+}
+
+.container{
+    @apply mx-auto max-w-[1440px] ;
+}

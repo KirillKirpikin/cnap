@@ -1,0 +1,17 @@
+.loyaut {
+    @apply grid gap-[15px] max-sm:grid-cols-2 max-md:grid-cols-3 md:flex md:flex-col md:basis-[24%] grow-0 shrink-0 bg-[#DDE3FF] px-[3%] py-[20px] md:pt-[45px] rounded-[20px] mb-[20px] md:mb-0 md:mr-[30px];
+}
+
+.btn {
+    @apply block text-[18px] md:text-[22px] bg-[#EBF1FB] font-normal text-[#404040] text-center py-[20px] rounded-[10px] transition-colors duration-200 md:mb-[50px];
+
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#3669AE] text-[#FFF];
+        }
+    }
+
+    &_active {
+        @apply bg-[#3669AE] text-[#FFF];
+    }
+}

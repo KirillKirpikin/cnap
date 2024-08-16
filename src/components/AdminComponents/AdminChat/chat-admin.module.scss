@@ -1,0 +1,148 @@
+.chats {
+    @apply h-full w-full flex max-md:flex-col bg-[#DDE3FF];
+}
+
+.left {
+    @apply w-full md:w-1/3 border-[1px] rounded-tl-[15px] max-md:rounded-tr-[15px] md:rounded-bl-[15px] border-black max-h-[806px] overflow-auto scroll-smooth;
+    .btn {
+        @apply bg-[#FFF] border-b-[1px] border-black relative transition-all duration-300;
+        button {
+            @apply py-[20px] px-[10px] w-full flex flex-col;
+            h3 {
+                @apply mb-[10px] font-bold text-[20px];
+            }
+        }
+        .middle {
+            @apply flex w-full justify-between;
+        }
+        .count {
+            @apply bg-white rounded-full px-[8px] py-[3px];
+        }
+
+        &_notReeading {
+            @apply bg-[#c9c6c6];
+        }
+
+        &_active {
+            @apply bg-[#3669AE];
+
+            h3,
+            p {
+                @apply text-white;
+            }
+            svg {
+                @apply stroke-white;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-[#3669AE];
+                h3,
+                p {
+                    @apply text-white;
+                }
+                svg {
+                    @apply stroke-white;
+                }
+                .count {
+                    @apply bg-black rounded-full px-[8px] py-[3px];
+                }
+            }
+        }
+    }
+    .none {
+        @apply flex md:pt-[70px] max-md:h-[100px] max-md:items-center  justify-center text-center text-[22px] md:text-[28px] font-bold;
+    }
+    .delete {
+        @apply absolute top-0 right-0 cursor-pointer px-[10px] py-[10px];
+        svg {
+            @apply stroke-black transition-all duration-300;
+        }
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply stroke-red-600;
+                }
+            }
+        }
+    }
+}
+.notFound {
+    @apply flex md:pt-[70px] max-md:h-[100px] max-md:items-center justify-center w-full md:w-2/3 text-[22px] md:text-[28px] font-bold;
+}
+
+.chat {
+    @apply md:w-2/3 max-h-[805px] bg-[#DDE3FF] flex flex-col justify-end max-md:pt-[20px];
+}
+
+.list {
+    @apply overflow-auto max-h-[750px] scroll-smooth w-full;
+}
+.bottom {
+    @apply flex;
+    .input {
+        @apply w-full;
+        textarea {
+            @apply mb-[-3px] rounded-none w-full px-[15px] py-[16px] outline-none resize-none max-h-[140px] overflow-y-auto;
+        }
+    }
+    .btns {
+        @apply flex  bg-white items-start pt-[15px];
+        button {
+            svg {
+                @apply stroke-[#3669AE] mx-[15px] transition-all duration-300;
+            }
+            svg {
+                @media (hover: hover) {
+                    &:hover {
+                        @apply fill-[#3669AE] stroke-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    @apply w-[500px];
+    h4 {
+        @apply text-center text-[20px] font-bold mb-[20px];
+    }
+    .content {
+        @apply mx-auto w-[320px] flex items-center border-2 border-[#3836AE] rounded-[10px] px-[10px] py-[30px];
+        p {
+            @apply grow shrink-0 basis-3/4 ml-4 text-[#404040] font-medium  md:text-[25px] xl:text-[30px];
+        }
+    }
+    .btns {
+        @apply flex justify-between mt-[30px];
+        button {
+            @apply bg-[#EBF1FB] px-[30px] py-[20px] rounded-xl;
+        }
+        .cancel {
+            @apply transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-red-700 text-white;
+                }
+            }
+        }
+        .del {
+            @apply bg-[#3669AE] text-white transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-green-600;
+                }
+            }
+        }
+    }
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}
+
+.last {
+    @apply mt-[10px] text-[15px] font-normal;
+}

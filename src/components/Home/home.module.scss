@@ -1,0 +1,25 @@
+.home {
+    @apply mx-2 mt-[60px] md:mt-[120px];
+}
+
+.container {
+    @apply mx-auto max-w-[1720px];
+}
+
+.btns {
+    @apply grid items-center min-[390px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[15px] xl:gap-[30px];
+}
+
+.btn {
+    @apply text-[20px] md:text-[33px] bg-[#EBF1FB] font-normal text-[#404040] text-center py-[20px] rounded-[10px] transition-colors duration-200;
+
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#3669AE] text-[#FFF];
+        }
+    }
+
+    &_active {
+        @apply bg-[#3669AE] text-[#FFF];
+    }
+}

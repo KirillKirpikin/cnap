@@ -1,0 +1,100 @@
+.info {
+    @apply mx-4 mt-[30px];
+    h2 {
+        @apply text-center font-bold text-[22px] md:text-[28px] mb-[40px];
+    }
+}
+
+.container {
+    @apply mx-auto max-w-[1440px] mt-[30px]  md:mt-[75px];
+}
+
+.content {
+    @apply mx-auto max-w-[1200px] 2xl:max-w-full;
+}
+
+.list {
+    @apply grid items-stretch md:grid-cols-2 gap-[25px] sm:gap-[50px] xl:gap-[75px];
+
+    .li {
+        @apply rounded-[20px] border-2 border-[#3836AE] min-h-[150px] sm:min-h-[200px] px-[20px] py-[15px] w-full h-full flex items-center justify-center relative;
+        p,
+        span {
+            @apply text-center text-[#404040] font-medium text-[20px] md:text-[25px] xl:text-[30px];
+        }
+        .btn {
+            @apply w-full h-full flex items-center justify-center;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                @apply bg-black/50;
+            }
+        }
+    }
+}
+
+.overlay {
+    @apply w-full h-full absolute flex left-0 top-[0] justify-center items-center transition-all duration-300;
+    svg {
+        @apply fill-white transition-all duration-300;
+    }
+    .update {
+        @apply mr-6;
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-green-500;
+                }
+            }
+        }
+    }
+    .delete {
+        @media (hover: hover) {
+            &:hover {
+                svg {
+                    @apply fill-red-600;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    @apply w-[500px];
+    h4 {
+        @apply text-center text-[20px] font-bold mb-[20px];
+    }
+    .content {
+        @apply mx-auto w-[320px] flex items-center border-2 border-[#3836AE] rounded-[10px] px-[10px] py-[30px];
+        p {
+            @apply grow shrink-0 basis-3/4 ml-4 text-[#404040] font-medium  md:text-[25px] xl:text-[30px];
+        }
+    }
+    .btns {
+        @apply flex justify-between mt-[30px];
+        button {
+            @apply bg-[#EBF1FB] px-[30px] py-[20px] rounded-xl;
+        }
+        .cancel {
+            @apply transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-red-700 text-white;
+                }
+            }
+        }
+        .del {
+            @apply bg-[#3669AE] text-white transition-all duration-300;
+            @media (hover: hover) {
+                &:hover {
+                    @apply bg-green-600;
+                }
+            }
+        }
+    }
+}
+
+.send {
+    @apply flex justify-center items-center overflow-y-auto max-md:h-screen max-md:w-screen h-full w-full bg-black/20 fixed top-0 left-0 transition-all duration-500 z-50;
+}

@@ -1,0 +1,28 @@
+.file {
+    @apply relative;
+}
+
+.label {
+    @apply rounded-[10px] bg-[#EBF1FB] text-[20px] md:text-[30px] font-normal px-[20px] py-[20px] cursor-pointer flex items-center justify-center transition-all duration-200;
+    @media (hover: hover) {
+        &:hover {
+            @apply bg-[#DDE3FF] text-white;
+        }
+    }
+}
+.list {
+    @apply bg-[#EBF1FB] max-md:mt-[20px] md:absolute md:top-[77px] rounded-[10px] w-[400%];
+    li {
+        @apply flex w-[100%] justify-between px-[10px] py-[10px];
+        button {
+            @apply text-red-500;
+        }
+    }
+}
+.input {
+    @apply m-0 p-0 w-0 h-0 invisible;
+}
+
+.max {
+    @apply text-red-700 text-[20px] absolute top-[57px] left-[78px] w-[400%];
+}
